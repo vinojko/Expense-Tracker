@@ -1,0 +1,191 @@
+body {
+  background-color: #F1F1F1;
+}
+
+.new-expense {
+    background-color: rgba(255, 255, 255, 0.81);
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(50px);
+  }
+  
+ 
+
+  .button-cancel {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background:  linear-gradient(269.37deg, #F24A0B 0.54%, #FF8152 99.54%);
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    transition: 2s;
+    border: none;
+  }
+  .button-add__expense {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background: linear-gradient(269.37deg, #4AD6A3 0.54%, #59DCB5 99.54%);
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    transition: 2s;
+    border: none;
+  }
+  
+  .new-expense button:hover,
+  .new-expense button:active {
+    border-color: #6e6e6e;
+    border: 100px;
+  }
+  
+  .new-expense button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .new-expense button.alternative:hover,
+  .new-expense button.alternative:active {
+    background-color: #ddb3f8;
+  }
+
+  .title {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+      transform: translate(calc(50vw - 50%), calc(0vh - 50%)) rotate(-90deg);
+    }
+    50% {
+      transform: translate(calc(50vw - 50%), calc(50vh - 50%)) rotate(-180deg);
+    }
+    75% {
+      transform: translate(calc(0vw - 50%), calc(50vh - 50%)) rotate(-270deg);
+    }
+    100% {
+      transform: translate(calc(0vw - 50%), calc(0vh - 50%)) rotate(-360deg);
+    }
+  }
+
+  @keyframes moveGreen {
+    0% {
+      transform: translate(calc(50vw - 50%), calc(50vh - 50%)) rotate(0deg);
+    }
+    25% {
+      transform: translate(calc(0vw - 50%), calc(50vh - 50%)) rotate(-90deg);
+    }
+    50% {
+      transform: translate(calc(0vw - 50%), calc(0vh - 50%)) rotate(-180deg);
+    }
+    75% {
+      transform: translate(calc(50vw - 50%), calc(0vh - 50%)) rotate(-270deg);
+    }
+    100% {
+      transform: translate(calc(50vw - 50%), calc(50vh - 50%)) rotate(-360deg);
+    }
+  }
+  
+  @keyframes moveOrange {
+    0% {
+      transform: translate(-50%, calc(-50vh + 50px)) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, calc(50vh - 50px)) rotate(-180deg);
+    }
+    100% {
+      transform: translate(-50%, calc(-50vh + 50px)) rotate(-360deg);
+    }
+  }
+  
+  .background-circle__blue {
+ /* background color */
+  position: absolute;
+  width: 516px;
+  height: 516px;
+  left: 500px;
+  top: 500px;
+
+   /* set the height of the element */
+  }
+  .background-circle__blue:before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: -20%;
+    left: -5%;
+    width: 516px;
+    height: 516px;
+    background: linear-gradient(180deg, #63BDE2 0%, #4696FA 100%);
+    border-radius: 50%; /* set border-radius to 50% */
+    animation-name: move;
+  animation-duration: 400s;
+  animation-iteration-count: infinite;
+  }
+
+  .background-circle__green {
+    /* background color */
+     position: absolute;
+     width: 200px;
+     height: 200px;
+     right: 1000px;
+     top: 200px;
+   
+      /* set the height of the element */
+     }
+     .background-circle__green:before {
+       content: '';
+       z-index: 0;
+       position: absolute;
+       top: -20%;
+       left: -5%;
+       width: 200px;
+       height: 200px;
+       background: linear-gradient(180deg, #4AD6A3 0%, #4CC498 100%);
+       border-radius: 50%; /* set border-radius to 50% */
+       animation-name: moveGreen;
+     animation-duration: 400s;
+     animation-iteration-count: infinite;
+     }
+
+     .background-circle__orange {
+      /* background color */
+       position: absolute;
+       width: 200px;
+       height: 200px;
+       left: 800px;
+       top: 1000px;
+     
+        /* set the height of the element */
+       }
+       .background-circle__orange:before {
+         content: '';
+         z-index: 0;
+         position: absolute;
+         top: -20%;
+         left: -5%;
+         width: 200px;
+         height: 200px;
+         background:  linear-gradient(180deg, #F24A0B 0%, rgba(255, 70, 0, 0.9) 100%);
+         border-radius: 50%; /* set border-radius to 50% */
+         animation-name: moveOrange;
+       animation-duration: 400s;
+       animation-iteration-count: infinite;
+       }

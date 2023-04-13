@@ -35,6 +35,9 @@ const App = () => {
 
   return (
     <div>
+      <div className="background-circle__blue"></div>
+      <div className="background-circle__green"></div>
+      <div className="background-circle__orange"></div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <ExpenseItems items={expenses} />
     </div>
