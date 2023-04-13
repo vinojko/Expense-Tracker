@@ -12,6 +12,9 @@ The React Expense Tracker includes the following features:
 -   **Responsive design:** The application is designed to work on both desktop and mobile devices.
 
 Images:
-<img width="1141" alt="Screenshot 2023-04-13 124739" src="https://user-images.githubusercontent.com/65426858/231781075-dcf98780-3a72-4327-afb5-53e197896c62.png">
+
+<img width="1106" alt="Screenshot 2023-04-13 155535" src="https://user-images.githubusercontent.com/65426858/231781503-e48dd4ce-bbf6-4c6c-b6af-ec5a3539bf1b.png">
+
+
 
 
