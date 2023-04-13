@@ -1,6 +1,6 @@
 # React Expense Tracker
 
-The React Expense Tracker is a simple web application that allows you to keep track of your expenses. This project was developed as part of the "React - The Complete Guide (incl. Redux)"] (https://www.udemy.com/course/react-the-complete-guide-incl-redux/)   course on Udemy.  You can enter expenses by providing a title, date, and amount. Once entered, you can filter your expenses by year to get a better understanding of your spending habits.
+The React Expense Tracker is a simple web application that allows you to keep track of your expenses. This project was developed as part of the "React - The Complete Guide (incl. Redux)"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)   course on Udemy.  You can enter expenses by providing a title, date, and amount. Once entered, you can filter your expenses by year to get a better understanding of your spending habits.
 
 ## Features
 
